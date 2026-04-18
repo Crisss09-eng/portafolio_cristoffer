@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nombre": "CardMatch",
+    "descripcion": "Juego de memoria tipo 'concentration' desarrollado con Laravel y MySQL. Los usuarios pueden registrarse, iniciar sesión y jugar para mejorar su memoria visual. El juego presenta un diseño atractivo y es responsive para dispositivos móviles.",
+    "tecnologias": "Laravel · MySQL",
+    "emoji": "🛒",
+    "gradiente": "linear-gradient(135deg, #e8f5ef 0%, #b7dfcc 100%)",
+    "urlCodigo": "https://cardmatch.adsocartago.com/VIEW/login.php",
+    "urlDemo": "#"
+  },
+  {
+    "id": 2,
+    "nombre": "Agenda de Tareas Personal",
+    "descripcion": "App web tipo to-do list con soporte para categorías, fechas de vencimiento y prioridades. Frontend dinámico con JavaScript y persistencia de datos en base de datos MySQL.",
+    "tecnologias": "PHP · JavaScript",
+    "emoji": "📋",
+    "gradiente": "linear-gradient(135deg, #eef3fb 0%, #b5cef4 100%)",
+    "urlCodigo": "https://github.com/Crisss09-eng",
+    "urlDemo": "#"
+  }
+]

@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --c-bg: #fafaf8;
+    --c-surface: #ffffff;
+    --c-text: #1a1a18;
+    --c-muted: #6b6b66;
+    --c-accent: #2d6a4f;
+    --c-accent-light: #e8f5ef;
+    --c-border: #e4e4e0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--c-bg);
+    color: var(--c-text);
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+@layer components {
+  /* Botones */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-medium no-underline transition-all duration-200;
+    background: var(--c-text);
+    color: var(--c-bg);
+  }
+  .btn-primary:hover {
+    background: var(--c-accent);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-normal no-underline transition-all duration-200;
+    color: var(--c-text);
+    border: 1.5px solid var(--c-border);
+  }
+  .btn-outline:hover {
+    border-color: var(--c-accent);
+    color: var(--c-accent);
+    transform: translateY(-2px);
+  }
+
+  .btn-sm {
+    @apply inline-flex items-center gap-1 px-4 py-2 rounded-full text-xs font-medium no-underline transition-all duration-200;
+    border: 1.5px solid var(--c-border);
+    color: var(--c-text);
+  }
+  .btn-sm:hover {
+    border-color: var(--c-accent);
+    color: var(--c-accent);
+  }
+
+  .btn-sm-fill {
+    background: var(--c-text);
+    color: var(--c-bg) !important;
+    border-color: var(--c-text) !important;
+  }
+  .btn-sm-fill:hover {
+    background: var(--c-accent) !important;
+    border-color: var(--c-accent) !important;
+  }
+
+  /* Etiquetas de sección */
+  .section-label {
+    @apply text-xs font-medium tracking-widest uppercase mb-3;
+    color: var(--c-accent);
+  }
+
+  .section-title {
+    @apply font-display leading-tight mb-5;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+  }
+
+  .section-desc {
+    @apply text-base leading-relaxed mb-12 font-light;
+    color: var(--c-muted);
+    max-width: 560px;
+  }
+
+  /* Divisor */
+  .divider {
+    height: 1px;
+    background: var(--c-border);
+    margin: 0 2rem;
+  }
+
+  /* Chip de habilidad */
+  .skill-chip {
+    @apply px-3 py-1 rounded-full text-sm;
+    background: var(--c-bg);
+    border: 1px solid var(--c-border);
+    color: var(--c-text);
+  }
+
+  /* Tag de proyecto */
+  .project-tag {
+    @apply inline-block rounded-full px-3 py-0.5 text-xs font-medium mb-3;
+    background: var(--c-accent-light);
+    color: var(--c-accent);
+  }
+}
